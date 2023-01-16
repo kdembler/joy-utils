@@ -15,15 +15,28 @@ declare module 'solid-js' {
 
 const App: Component = () => {
   return (
-    <main class="w-full min-h-[100vh] py-16 px-4 flex flex-col items-center bg-gradient-to-tr from-gray-50 to-gray-300">
-      <h1 class="text-2xl font-semibold">Joystream Utils</h1>
-      <div class="max-w-[1024px] mt-5 sm:mt-20 gap-x-8 gap-y-15 m-auto grid sm:grid-cols-layout items-center justify-items-center">
-        <TokenConversionWidget />
-        <DurationConversionWidget />
-        <DateConversionWidget />
-        <SalaryConversionWidget />
-      </div>
-    </main>
+    <div class="flex flex-col min-h-[100vh]">
+      <main class="flex-1 w-full py-16 px-4 flex flex-col items-center ">
+        <h1 class="text-2xl font-semibold">Joystream Utils</h1>
+        <div class="max-w-[1024px] mt-5 sm:mt-20 gap-x-8 gap-y-15 m-auto grid sm:grid-cols-layout items-center justify-items-center">
+          <TokenConversionWidget />
+          <DurationConversionWidget />
+          <DateConversionWidget />
+          <SalaryConversionWidget />
+        </div>
+      </main>
+      <footer class="text-gray-500 text-xs bg-gray-50 shadow w-full flex flex-col items-center justify-center py-3 border-t gap-2">
+        <span>Made by klaudiusz.eth</span>
+        <a
+          href="https://github.com/kdembler/joy-utils/issues/new"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 hover:underline"
+        >
+          Report an issue
+        </a>
+      </footer>
+    </div>
   )
 }
 
