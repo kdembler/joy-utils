@@ -8,6 +8,9 @@ export default defineConfig({
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      gridTemplateColumns: {
+        layout: 'repeat(auto-fit, minmax(25rem, 1fr))',
+      },
     },
   },
 })

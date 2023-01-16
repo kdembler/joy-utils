@@ -704,6 +704,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@melodev/solid-datepicker@npm:^0.1.15":
+  version: 0.1.15
+  resolution: "@melodev/solid-datepicker@npm:0.1.15"
+  dependencies:
+    solid-js: ^1.1.7
+    solid-styled-components: ^0.28.4
+    solid-transition-group: ^0.0.10
+  checksum: e64de119917d1d14169d89f5d86ffdae7b082bd47dbabbc300030da7f5aa845d82ffae16590c25ef748c37ab1a18455853a0387328c744daed5dd2f2296be97b
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1363,6 +1374,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"goober@npm:^2.1.10":
+  version: 2.1.11
+  resolution: "goober@npm:2.1.11"
+  peerDependencies:
+    csstype: ^3.0.10
+  checksum: c37c14f476f65f7c66d94ac1a1686a130b4fa42fc512175444e3c708fa1815f6ea579e1b23567e57d41de2e62ff8b5913915ec829f05a3b995d1a7a0016c0bdf
+  languageName: node
+  linkType: hard
+
 "graceful-fs@npm:^4.2.6":
   version: 4.2.10
   resolution: "graceful-fs@npm:4.2.10"
@@ -1565,6 +1585,7 @@ __metadata:
   resolution: "joy-utils@workspace:."
   dependencies:
     "@ethersproject/units": ^5.7.0
+    "@melodev/solid-datepicker": ^0.1.15
     "@types/luxon": ^3.2.0
     classnames: ^2.3.2
     luxon: ^3.2.1
@@ -2146,7 +2167,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solid-js@npm:^1.6.9":
+"solid-js@npm:^1.1.7, solid-js@npm:^1.6.9":
   version: 1.6.9
   resolution: "solid-js@npm:1.6.9"
   dependencies:
@@ -2168,6 +2189,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"solid-styled-components@npm:^0.28.4":
+  version: 0.28.5
+  resolution: "solid-styled-components@npm:0.28.5"
+  dependencies:
+    csstype: ^3.1.0
+    goober: ^2.1.10
+  peerDependencies:
+    solid-js: ^1.4.4
+  checksum: e58095582275b2e33b4a7ba975e464cc414125b304ad3fd91f36397552ebb305b05629f6ba4ec631839b5aca2cf0cf622028ca9885b67f21df96f1c35526d972
+  languageName: node
+  linkType: hard
+
 "solid-tippy@npm:^0.2.0":
   version: 0.2.0
   resolution: "solid-tippy@npm:0.2.0"
@@ -2175,6 +2208,15 @@ __metadata:
     solid-js: ^1.2
     tippy.js: ^6.3
   checksum: 6682556e2727d1cd925fe0096368dbd138e150aa88028df87d822abf2181939a4dc3e0ed1d0a4cfb783058b4f575db358d180e05243cf32a444958db09c407ed
+  languageName: node
+  linkType: hard
+
+"solid-transition-group@npm:^0.0.10":
+  version: 0.0.10
+  resolution: "solid-transition-group@npm:0.0.10"
+  peerDependencies:
+    solid-js: ^1.0.0
+  checksum: ad87da0b35222e0764e1b5d47f59a54c106c8de4124362e0957764b3afc5e14b3341e8aa7a5c00bdcef00b6e01ad3eb5521f69ff8e74ba8cad257e728d27e2d9
   languageName: node
   linkType: hard
 

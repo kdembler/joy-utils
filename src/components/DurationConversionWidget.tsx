@@ -88,7 +88,7 @@ export const DurationConversionWidget: Component = () => {
               <li>M - months</li>
               <li>D/d - days</li>
               <li>H/h - hours</li>
-              <li>M - minutes</li>
+              <li>m - minutes</li>
               <li>S/s - seconds</li>
             </ul>
             <span>Example: 1y2M3d4h5m6s</span>

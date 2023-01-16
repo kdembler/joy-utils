@@ -1,11 +1,12 @@
-import { Component, createEffect, createSignal, Setter } from 'solid-js'
+import { Component, createEffect, createSignal } from 'solid-js'
 import { parseUnits, formatUnits } from '@ethersproject/units'
 import { Input } from './Input'
 
 type TokenInputProps = {
   value: bigint
-  onChange: Setter<bigint>
+  onChange: (value: bigint) => void
   isHapi?: boolean
+  label: string
   class?: string
 }
 
@@ -62,7 +63,7 @@ export const TokenInput: Component<TokenInputProps> = (props) => {
 
   return (
     <Input
-      label={props.isHapi ? 'HAPI' : 'JOY'}
+      label={props.label}
       isInvalid={!isValueValid()}
       placeholder="0"
       value={internalValue()}

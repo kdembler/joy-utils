@@ -7,8 +7,8 @@ export const TokenConversionWidget: Component = () => {
 
   return (
     <Card title="JOY ↔️ HAPI conversion">
-      <TokenInput value={tokenValue()} onChange={setTokenValue} />
-      <TokenInput isHapi value={tokenValue()} onChange={setTokenValue} />
+      <TokenInput label="JOY" value={tokenValue()} onChange={setTokenValue} />
+      <TokenInput label="HAPI" isHapi value={tokenValue()} onChange={setTokenValue} />
     </Card>
   )
 }
