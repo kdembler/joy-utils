@@ -1,8 +1,13 @@
 import { defineConfig } from 'vite-plugin-windicss'
+import defaultTheme from 'windicss/defaultTheme'
 
 export default defineConfig({
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
 })
