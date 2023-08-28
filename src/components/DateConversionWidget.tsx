@@ -17,7 +17,7 @@ const REFERENCE_FALLBACK: Reference = {
 
 async function getLatestBlock(): Promise<Reference> {
   try {
-    const response = await fetch('https://joystream.koalva.io/sidecar/blocks/head')
+    const response = await fetch('https://monitoring.joyutils.org/sidecar/blocks/head')
     if (!response.ok) {
       throw new Error('Bad response')
     }
