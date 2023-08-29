@@ -49,7 +49,13 @@ export const TokenInput: Component<TokenInputProps> = (props) => {
       return
     }
 
-    rawStringValue = rawStringValue.replaceAll(',', '.')
+    if (props.isHapi) {
+      // remove all non-numeric characters
+      rawStringValue = rawStringValue.replace(/\D/g, '')
+    } else {
+      // replace last comma (not followed by another comma or dot) with a dot
+      rawStringValue = rawStringValue.replace(/[,.](?=[^,.]*$)/, '.')
+    }
     expectValueUpdateRef = true
     setInternalValue(rawStringValue)
 
