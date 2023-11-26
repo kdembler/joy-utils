@@ -11,8 +11,8 @@ type Reference = {
 }
 
 const REFERENCE_FALLBACK: Reference = {
-  block: 545000,
-  timestamp: 1673893542,
+  block: 5053646,
+  timestamp: 1701004344,
 }
 
 async function getLatestBlock(): Promise<Reference> {
