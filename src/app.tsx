@@ -4,6 +4,7 @@ import { DurationConversionWidget } from './components/DurationConversionWidget'
 import { DateConversionWidget } from './components/DateConversionWidget'
 import { tippy } from 'solid-tippy'
 import { SalaryConversionWidget } from './components/SalaryConversionWidget'
+import { VideoFeeWidget } from './components/VideoFeeWidget'
 
 declare module 'solid-js' {
   namespace JSX {
@@ -23,6 +24,7 @@ const App: Component = () => {
           <DurationConversionWidget />
           <DateConversionWidget />
           <SalaryConversionWidget />
+          <VideoFeeWidget />
         </div>
       </main>
       <footer class="text-gray-500 text-xs bg-gray-50 shadow w-full flex flex-col items-center justify-center py-3 border-t gap-2">
